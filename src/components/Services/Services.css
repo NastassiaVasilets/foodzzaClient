@@ -1,0 +1,68 @@
+/** services **/
+.sidebar-menu {
+	background: #f0f0f0;
+	position: relative;
+	padding: 16px;
+	border: 2px solid #d80027;
+}
+
+/** service **/
+.service-item {
+  	margin-bottom: 20px;
+	background: #f0f0f0;
+	position: relative;
+	padding: 16px;
+}
+.service-item-logo {
+position: relative;
+    opacity: 0.2;
+    width: 200px;
+    margin-bottom: -31%;
+    margin-left: 60%;
+}
+.service-item-title {
+	font-size: 24px;
+	margin-bottom: 24px;
+	color: #333;
+}
+.service-item-title:hover {
+	color: #d80027;
+	text-decoration: none;
+}
+.service-item-title:focus {
+	color: #333;
+	text-decoration: underline;
+}
+tr {
+	margin-bottom: 8px;
+	height: 24px;
+}
+.td-title {
+	color: #999;
+	text-align: left;
+}
+
+
+/** service form **/
+.serviceFormChoose p {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	width: 35%;
+}
+.serviceFormChoose .form-control {
+	display: inline-block;
+	width: 55%;
+	margin-left: -0.36em;
+}
+.serviceFormChoose .form-control:focus {
+	border-color: #d80027;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(216,0,39,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(216,0,39,.6);
+}
+.serviceFormChoose-button {
+	display: inherit;
+	padding: 9px 15px;
+	margin: 25px auto 0;
+}

@@ -1,0 +1,120 @@
+/** service detail **/
+.serviceDetail {
+	background: #f0f0f0;
+	height: 271px;
+	padding: 16px;
+}
+.serviceDetail-logo {
+	width: 100%;
+}
+.serviceDetail-logo-col {
+	line-height: 271px;
+}
+.serviceDetail-info-title {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+.serviceDetail-info-title:hover {
+	color: #d80027;
+}
+.serviceDetail-rate {
+  margin-top: 50px;
+}
+.serviceDetail-like,
+.serviceDetail-dislike {
+  display: inline-block;
+  width: 50%;
+}
+.serviceDetail-dislike {
+  margin-left: -0.36em;
+}
+.serviceDetail-like .ico,
+.serviceDetail-dislike .ico {
+  background: url('./like-dislike.png') no-repeat;
+  height: 64px;
+  width: 64px;
+  background-size: 178%;
+  margin: 0 auto;
+}
+.serviceDetail-dislike .ico {
+  background-position: -51px -19px;
+}
+
+.serviceDetail-like .value,
+.serviceDetail-dislike .value {
+  text-align: center;
+  font-size: 32px;
+}
+
+/** dish **/
+.dish-item {
+  background: #f0f0f0;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  display: inline-block;
+  width: calc(100% / 3 - 1.08em);
+  margin-right: 0.56em;
+  transition: all 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+.dish-item-image {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.dish-item-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  backface-visibility: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.dish-item-name {
+  background: rgba(12, 34, 52, 0.8);
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9em;
+  padding: 0 8px 3px;
+  transition: all 0.5s ease-in-out;
+}
+.dish-item-other-info {
+  background: rgba(12, 34, 52, 0.6);
+  font-size: 18px;
+  position: absolute;
+  color: #fff;
+  margin-top: 50%;
+  width: 100%;
+  padding: 5px;
+  bottom: -6px;
+  transition: all 0.35s 0.1s linear;
+}
+.dish-item-url {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+}
+.dish-item-url:hover {
+  text-decoration: none;
+  color: #d80027;
+}
+.dish-item:hover .dish-item-image {
+  transform: scale(1.2);
+}
+.dish-item:hover .dish-item-title {
+  transform: translateY(10%);
+}
+.dish-item:hover .dish-item-other-info {
+  transform: translateY(-10%);
+}
+.dish-item:hover .dish-item-info {
+  visibility: visible;
+  opacity: 1;
+}

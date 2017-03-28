@@ -1,0 +1,24 @@
+.notFoundPage {
+	position: relative;
+}
+.notFoundPage-img {
+	background: url('404.jpg') no-repeat;
+	background-size: contain;
+	background-position: 50%;
+	height: 444px;
+}
+.notFoundPage-link {
+	position: absolute;
+    top: 360px;
+    left: 50%;
+    margin-left: -82px;
+    font-size: 16px;
+    text-shadow: none;
+}
+.notFoundPage-link a {
+	color: #fff;
+}
+.notFoundPage-link a:hover {
+	color: #d80027;
+	text-decoration: none;
+}
