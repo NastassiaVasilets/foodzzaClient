@@ -11,7 +11,6 @@ import Button from 'react-bootstrap/lib/Button';
 import OrderModal from './OrderModal.jsx';
 
 import './Order.css';
-//Привязывать контекст с помощью метода bind можно, но можно использовать такую конструкцию method = () => {}
 class Order extends Component {
   constructor(props) {
     super(props);

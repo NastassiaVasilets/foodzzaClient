@@ -155,12 +155,8 @@ export default connect(
 				return signUp(user)
 				.then(
 					(response) => {
-						dispatch((dispatch) => {
-							dispatch(signUpSuccess(response.data, response))
-							.then(() => {
-								dispatch(push('/'));
-							})
-						});
+						dispatch(signUpSuccess(response.data, response))
+						dispatch(push('/'));
 					},
 					(response) => {
 						dispatch(signUpFailure(response.response.data.errors))
